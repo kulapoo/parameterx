@@ -8,6 +8,7 @@ repository = "https://github.com/kulapoo/parameterx"
 license = "MIT"
 readme = "README.md"
 keywords = ["parameter", "configuration", "settings", "options", "arguments", "key-value", "typed", "type-safe", "flexible"]
+documentation = "https://docs.rs/parameterx"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

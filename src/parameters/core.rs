@@ -45,11 +45,16 @@ impl Parameters {
     ///
     /// ```
     /// use parameterx::Parameters;
-    /// use parameterx::value::ParameterValue;
+    /// use parameterx::ParameterValue;
     ///
+    /// #[derive(Debug, Clone)]
     /// struct MyValue;
-    /// impl ParameterValue for MyValue {}
     ///
+    /// impl ToString for MyValue {
+    ///     fn to_string(&self) -> String {
+    ///         "my_value".to_string()
+    ///     }
+    /// }
     /// let mut params = Parameters::new();
     /// params.insert("key", MyValue);
     /// ```
@@ -75,10 +80,16 @@ impl Parameters {
     ///
     /// ```
     /// use parameterx::Parameters;
-    /// use parameterx::value::ParameterValue;
+    /// use parameterx::ParameterValue;
     ///
+   /// #[derive(Debug, Clone)]
     /// struct MyValue;
-    /// impl ParameterValue for MyValue {}
+    ///
+    /// impl ToString for MyValue {
+    ///     fn to_string(&self) -> String {
+    ///         "my_value".to_string()
+    ///     }
+    /// }
     ///
     /// let mut params = Parameters::new();
     /// params.insert("key", MyValue);
@@ -103,10 +114,16 @@ impl Parameters {
     ///
     /// ```
     /// use parameterx::Parameters;
-    /// use parameterx::value::ParameterValue;
+    /// use parameterx::ParameterValue;
     ///
+   /// #[derive(Debug, Clone)]
     /// struct MyValue;
-    /// impl ParameterValue for MyValue {}
+    ///
+    /// impl ToString for MyValue {
+    ///     fn to_string(&self) -> String {
+    ///         "my_value".to_string()
+    ///     }
+    /// }
     ///
     /// let mut params = Parameters::new();
     /// params.insert("key", MyValue);
@@ -130,10 +147,12 @@ impl Parameters {
     ///
     /// ```
     /// use parameterx::Parameters;
-    /// use parameterx::value::ParameterValue;
+    /// use parameterx::ParameterValue;
     ///
+   /// #[derive(Debug, Clone)]
     /// struct MyValue;
-    /// impl ParameterValue for MyValue {
+    ///
+    /// impl ToString for MyValue {
     ///     fn to_string(&self) -> String {
     ///         "my_value".to_string()
     ///     }
