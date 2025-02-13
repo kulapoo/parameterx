@@ -2,6 +2,12 @@
 name = "parameterx"
 version = "0.1.0"
 edition = "2021"
+authors = ["kulapoo <kulaskulapoo@gmail.com>"]
+description = "A flexible and type-safe parameter management system for Rust applications. This library provides multiple ways to store and retrieve typed values using a key-value structure, with support for custom types and various initialization patterns."
+repository = "https://github.com/kulapoo/parameterx"
+license = "MIT"
+readme = "README.md"
+keywords = ["parameter", "configuration", "settings", "options", "arguments", "key-value", "typed", "type-safe", "flexible"]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

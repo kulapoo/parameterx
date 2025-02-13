@@ -4,7 +4,7 @@ mod value;
 mod parameters;
 
 pub use error::ParameterError;
-pub use value::ParameterValue;
+pub use value::{ParameterValue, IntVec, IntegerBehavior};
 pub use parameters::{Parameters, ParametersBuilder};
 
 pub type Result<T> = std::result::Result<T, ParameterError>;
