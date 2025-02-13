@@ -7,7 +7,7 @@ description = "A flexible and type-safe parameter management system for Rust app
 repository = "https://github.com/kulapoo/parameterx"
 license = "MIT"
 readme = "README.md"
-keywords = ["parameter", "configuration", "settings", "options", "arguments", "key-value", "typed", "type-safe", "flexible"]
+keywords = ["parameter",  "options", "flexible", "key-value", "type-safe"]
 documentation = "https://docs.rs/parameterx"
 
 [dependencies]
